@@ -1,0 +1,46 @@
+TERRA PLENA — SITE v4 (08/11/2026)
+==================================
+
+PACOTE PRONTO PARA GITHUB: este zip contém exatamente o que vai para o repositório.
+Siga o passo a passo do README.md (arrastar o conteúdo para o repositório novo).
+
+O QUE MUDOU NA v4
+------------------
+* Carrossel agora tem 6 slides na MESMA ORDEM DO SITE DE REFERÊNCIA:
+  1º APP (banner oficial em alta), Nutrição Animal, Vídeo institucional (play → YouTube),
+  Amplo portfólio (leva à nossa loja), Assistência técnica, Sementes de Soja.
+* Bug do slide congelado CORRIGIDO: pausa ao toque/mouse agora é temporária e retoma
+  sozinho; além disso o slider responde a deslizar para os lados no celular.
+* Fotos do topo voltaram à resolução ORIGINAL (1920x770).
+* Popups: barra de cookies (fixa até aceitar) + modal "Baixe o app" (aparece 6s após
+  entrar, uma vez por dia). Ambos também na loja.
+* Blog: as 3 matérias do site de referência, com as capas originais (assets/news/).
+* Catálogo reforçado: +44 produtos reais da linha parceira com FOTOS LOCAIS
+  (Hortimax, linha foliar, bombas/pulverizadores/semeadoras) — todos "Sob consulta".
+  Abas novas na loja: Hortimax e Plantio, Manejo e Colheita.
+* Auditoria completa: todo JS validado (parser sem erros), todas as imagens
+  conferidas arquivo por arquivo, zero dependência de imagem externa.
+
+ONDE MUDAR COISA (antes de publicar)
+------------------------------------
+1. WhatsApp: busque 5577999004398 nos dois HTMLs (o número atual já é o certo: 77 99900-4398).
+2. Google Play: constante APP_PLAY nos dois HTMLs — cole o link entre as aspas. Enquanto
+   estiver vazio, os botões de app mostram aviso "em breve".
+3. Rodapé: CNPJ 00.000.000/0001-00, e-mail sac@terraplena.com.br, razão social.
+4. Preços: bloco "const P = [...]" — referência de mercado 07-08/11/2026.
+
+AVISOS
+------
+* Avaliações (4,9 / 387 / +1.200 pedidos) são ILUSTRATIVAS.
+* "Gráfite Agrícola SC 5kg" não tem foto no catálogo original (aparece com ícone).
+* O catálogo deles ainda tem coleções que bloqueiam exportação automática (erro 429);
+  o que abriu já foi espelhado, o resto entra quando o bloqueio liberar.
+
+ESTRUTURA
+---------
+index.html    home institucional (carrossel, seções, blog, rodapé)
+loja.html     loja online (catálogo, busca, carrinho, checkout WhatsApp)
+assets/       fotos (slides, capas de blog, badge Play, apoio)
+logos/        8 logos de parceiros
+products/     fotos dos produtos (36 próprios + 43 parceiro)
+.nojekyll     faz o GitHub Pages servir tudo sem filtrar nada
